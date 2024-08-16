@@ -1,16 +1,16 @@
-(load "E:/0 wehiby/ssax/web_tem/templates/SXML-tree-trans.scm")
+(load "SXML-tree-trans.scm")
 
 
 ;; Load content definitions from the templates directory
-(load "E:/0 wehiby/ssax/web_tem/templates/page1.sxslt")
-(load "E:/0 wehiby/ssax/web_tem/templates/page2.sxslt")
-(load "E:/0 wehiby/ssax/web_tem/templates/page3.sxslt")
+(load "page1.sxslt")
+(load "page2.sxslt")
+(load "page3.sxslt")
 
 ;; Load XSLT templates from the templates directory
-(load "E:/0 wehiby/ssax/web_tem/templates/index.sxslt")
-(load "E:/0 wehiby/ssax/web_tem/templates/sections.sxslt")
-(load "E:/0 wehiby/ssax/web_tem/templates/footer.sxslt")
-(load "E:/0 wehiby/ssax/web_tem/templates/sections.sxslt")
+(load "index.sxslt")
+(load "sections.sxslt")
+(load "footer.sxslt")
+(load "sections.sxslt")
 
 ;; Define entag function
 (define (entag tag elems)
