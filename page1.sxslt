@@ -1,0 +1,3 @@
+(define page1-content
+  '((h1 "Title 1")
+    (p "This is Page 1")))

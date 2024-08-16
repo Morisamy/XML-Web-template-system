@@ -1,0 +1,12 @@
+(define my-rules
+  `((page . ,(lambda (tag page-title . contents)
+               `(html (@ (xmlns "http://www.w3.org/1999/xhtml")
+                         (xml:lang "en") (lang "en"))
+                      (head (title ,page-title))
+                      (body ,@contents))))
+    (navigation . ,(lambda (tag) '(ul (li (a (@ (href "home")) "homepage"))
+                                       (li (a (@ (href "about")) "about this site"))
+                                       (li (a (@ (href "contact")) "contact us")))))
+    (footer . ,(lambda (tag) '(p "Copyright (c) 2007")))
+    (*text* . ,(lambda (tag str) str)) ;; Handle text nodes
+    (*default* . ,(lambda x x)))) ;; Default rule for any unmatched tags

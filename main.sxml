@@ -1,0 +1,5 @@
+(define semantic-page
+  ’(page "Welcome to my homepage"
+    (navigation)
+    (body)
+    (footer)))

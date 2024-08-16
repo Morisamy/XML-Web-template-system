@@ -1,0 +1,3 @@
+(define footer-content
+  '((footer
+     (p "Copyright (c) 2007"))))

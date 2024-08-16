@@ -1,0 +1,15 @@
+(define (generate-index-page)
+  `(html (@ (xmlns "http://www.w3.org/1999/xhtml")
+            (xml:lang "en") (lang "en"))
+         (head (title "Index"))
+         (body
+          (h1 "Index of Pages")
+          (ul
+           (li (a href "page1.html")) "Page 1"))
+           (li (a href "page2.html")) "Page 2"))
+           
+;; Function to generate the HTML file from the index page content
+(define (generate-index)
+  (with-output-to-file "output/index.html"
+    (lambda ()
+      (ssax:output-xml (generate-index-page)))))
